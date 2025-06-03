@@ -8,5 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
-    protected $fillable = ['nombre','precio','categoria','imagen'];
+
+    protected $fillable = [
+        'name',
+        'price',
+        'cant',
+        'category',
+        'imagen',
+    ];
+
+    public function purchases(){
+        return $this->hasMany(PurchaseHistory::class, 'idProduct');
+    }
+
+
 }

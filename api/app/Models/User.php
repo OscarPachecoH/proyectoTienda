@@ -21,7 +21,16 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'userAdmin',
     ];
+
+    public function purchases(){
+        return $this->hasMany(PurchaseHistory::class, 'idUser');
+    }
+
+    public function cart(){
+        return $this->hasMany(Cart::class, 'idUser');
+    }
 
     /**
      * The attributes that should be hidden for serialization.
