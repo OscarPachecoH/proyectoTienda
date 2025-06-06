@@ -1,0 +1,14 @@
+footer {
+    background-color: #ff4a4a;
+    color: #f8f9fa;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f8f9fa !important;
+}
+
+footer .bi {
+    font-size: 1.5rem;
+}

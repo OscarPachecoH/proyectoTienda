@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #c74a15;
+    background-color: #ff4a4a;
 }
 
 .navbar-brand, .nav-link, .dropdown-item, .dropdown-menu{
@@ -11,10 +11,10 @@
 }
 
 .dropdown-menu{
-    background-color: #c74a15 !important;
+    background-color: #ff4a4a !important;
 }
 
 .dropdown-item:hover{
-    background-color: #ea6f3b !important;
+    background-color: #fe5c5c !important;
     color: white !important;
 }

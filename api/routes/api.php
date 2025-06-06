@@ -14,7 +14,7 @@ Route::post('/login', [AuthController::class, 'login']);
 // Por definir si esta ruta se queda o no
 Route::controller(ProductController::class)->group(function(){
     Route::get('/products', 'index');
-    Route::get('/products/{id}', 'show')->where('id', '[0-9]+'); // Ruta que da error, dato esperado tipo int pero se ejecuta aunque reciba un string
+    Route::get('/products/{id}', 'show')->where('id', '[0-9]+');
 });
 
 // Rutas protegidas

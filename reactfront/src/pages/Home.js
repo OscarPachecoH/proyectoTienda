@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 import productService from "../services/productService";
+import Carousel from "../components/Carousel";
 
 function Home() {
 
@@ -27,6 +29,7 @@ function Home() {
     return (
         <>
             <Navbar />
+            <Carousel />
             <div className="container my-5">
                 {error && <div className="alert alert-danget">{error}</div>}
                 {products.length === 0 && !error ? (
@@ -34,28 +37,28 @@ function Home() {
                 ) : (
                     <div className="row">
                         <div className="section-male row">
-                            <h1>Sección para hombres</h1>
+                            <h1 className="barlow-extralight-italic">Sección para hombres</h1>
                             <hr className="dropdown-divider" />
                             {pMen.map((m) => (
-                                <div key={m.id} className="col-md-3 mb-3" >
+                                <div key={m.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" >
                                     <Card product={m} />
                                 </div>
                             ))}
                         </div>
                         <div className="section-female row">
-                            <h1>Sección para mujeres</h1>
+                            <h1 className="barlow-extralight-italic">Sección para mujeres</h1>
                             <hr className="dropdown-divider" />
                             {pWomen.map((w) => (
-                                <div key={w.id} className="col-md-4 mb-4" >
+                                <div key={w.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" >
                                     <Card product={w} />
                                 </div>
                             ))}
                         </div>
                         <div className="section-childern row">
-                            <h1>Sección para niños</h1>
+                            <h1 className="barlow-extralight-italic">Sección para niños</h1>
                             <hr className="dropdown-divider" />
                             {pChilder.map((c) => (
-                                <div key={c.id} className="col-md-4 mb-4" >
+                                <div key={c.id} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" >
                                     <Card product={c} />
                                 </div>
                             ))}
@@ -63,6 +66,7 @@ function Home() {
                     </div>
                 )}
             </div>
+            <Footer />
         </>
     )
 }

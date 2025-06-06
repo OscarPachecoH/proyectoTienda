@@ -1,6 +1,12 @@
+.div-container {
+    width: 100%;
+    height: 100%;
+}
+
 .div-container .card {
-    width: 18rem;
-    height: 26rem;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    max-width: 100%;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -14,6 +20,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    display: block;
     top: 0;
     left: 0;
     opacity: 0.9;
@@ -25,12 +32,12 @@
     inset: auto auto 30px 30px;
     margin: 0;
     transition: inset 0.3s 0.3s ease-out;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: normal;
+    font-family: "Barlow", sans-serif;
+    font-weight: bolder;
     text-transform: uppercase;
 }
 
-.card p, .card a {
+.card p, .card .btn-buy, .card .btn-addcart {
     position: absolute;
     opacity: 0;
     max-width: 80%;
@@ -38,23 +45,39 @@
 }
 
 .card p {
-    inset: auto auto 50px 30px;
+    inset: auto auto 60px 30px;
+    font-size: large;
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
 }
 
-.card a {
+.card .btn-buy {
     inset: auto auto 40px 30px;
-    color: inherit;
+    color: #c74a15;
     text-decoration: none;
+    background-image: linear-gradient(to right, #ffb319, #ff8383);
+}
+
+.card .btn-addcart {
+    inset: auto auto 40px 140px;
+    color: #ff834e;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #e30075, #ff6161);
 }
 
 .card:hover h5 {
-    inset: auto auto 220px 30px;
+    inset: auto auto 100px 30px;
     transition: inset 0.3s ease-out;
 }
 
-.card:hover p, .card:hover a {
+.card:hover p, .card:hover .btn-buy, .card:hover .btn-addcart {
     opacity: 1;
     transition: opacity 0.5s 0.1s ease-in;
+}
+
+.card .btn:hover {
+    color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover img {
