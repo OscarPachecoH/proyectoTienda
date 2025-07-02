@@ -13,14 +13,17 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle barlow-extralight" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Registrate
+                            <Link to={'/login'} >
+                                Inicia sesión
+                            </Link>
+                            {/*<a className="nav-link dropdown-toggle barlow-extralight" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Inicia sesión
                             </a>
-                            <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item barlow-extralight" to={'/profile'}><FaUser /> Profile</Link></li>
+                            <ul className="dropdown-menu dropdown-menu-end">
+                                <li><Link className="dropdown-item barlow-extralight" to={'/profile'}><FaUser /> Perfil</Link></li>
                                 <li><hr className="dropdown-divider barlow-extralight" /></li>
-                                <li><Link className="dropdown-item barlow-extralight" ><span><FaRightFromBracket /> Log out</span></Link></li>
-                            </ul>
+                                <li><Link className="dropdown-item barlow-extralight" ><span><FaRightFromBracket /> Cerrar sesión</span></Link></li>
+                            </ul>*/}
                         </li>
                     </ul>
                 </div>

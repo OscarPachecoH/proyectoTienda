@@ -36,7 +36,7 @@ function Home() {
                     <div className="alert alert-warning">No hay productos registrados</div>
                 ) : (
                     <div className="row">
-                        <div className="section-male row">
+                        <div id="hombre" className="section-male row">
                             <h1 className="barlow-extralight-italic">Sección para hombres</h1>
                             <hr className="dropdown-divider" />
                             {pMen.map((m) => (
@@ -45,7 +45,7 @@ function Home() {
                                 </div>
                             ))}
                         </div>
-                        <div className="section-female row">
+                        <div id="mujer" className="section-female row">
                             <h1 className="barlow-extralight-italic">Sección para mujeres</h1>
                             <hr className="dropdown-divider" />
                             {pWomen.map((w) => (
@@ -54,7 +54,7 @@ function Home() {
                                 </div>
                             ))}
                         </div>
-                        <div className="section-childern row">
+                        <div id="ninos" className="section-childern row">
                             <h1 className="barlow-extralight-italic">Sección para niños</h1>
                             <hr className="dropdown-divider" />
                             {pChilder.map((c) => (

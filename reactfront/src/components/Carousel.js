@@ -10,7 +10,7 @@ function Carousel() {
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Colección Mujer 2025</h5>
                         <p>Descrubre las ultimas tendencias en moda femenina</p>
-                        <a href="/mujer" className="btn btn-primary">Ver Colección</a>
+                        <a href="#mujer" className="btn btn-primary">Ver Colección</a>
                     </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="5000">
@@ -18,7 +18,7 @@ function Carousel() {
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Colección Hombre 2025</h5>
                         <p>Descrubre las ultimas tendencias en moda masculina</p>
-                        <a href="/hombre" className="btn btn-primary">Ver Colección</a>
+                        <a href="#hombre" className="btn btn-primary">Ver Colección</a>
                     </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="5000">
@@ -26,7 +26,7 @@ function Carousel() {
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Moda para los mas pequeños</h5>
                         <p>Ropa divertida y duradera para los mas pequeños</p>
-                        <a href="/ninos" className="btn btn-primary">Ver Colección</a>
+                        <a href="#ninos" className="btn btn-primary">Ver Colección</a>
                     </div>
                 </div>
             </div>
