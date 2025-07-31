@@ -49,15 +49,30 @@
 	transition: transform 80ms ease-in;
 }
 
-button:active {
+.login-btn-back {
+	font-family: "Barlow", sans-serif;
+	border-radius: 20px;
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active{
 	transform: scale(0.95);
 }
 
-button:focus {
+button:focus{
 	outline: none;
 }
 
-button.ghost {
+button.ghost{
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
